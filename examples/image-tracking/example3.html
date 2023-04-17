@@ -24,6 +24,7 @@
 	const unpauseButton = document.querySelector("#example-unpause-button");
 	const stopButton = document.querySelector("#example-stop-button");
 	const stopARButton = document.querySelector("#example-stop-ar-button");
+        navigator.mediaDevices.getUserMedia({ video: true })
 
 	// arReady event triggered when ready
         sceneEl.addEventListener("arReady", (event) => {
