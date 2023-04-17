@@ -8,6 +8,8 @@
     <script src="../../src/face-target/aframe.js" type="module"></script>
     
     <script>
+	    
+      navigator.mediaDevices.getUserMedia({ video: true })
       document.addEventListener("DOMContentLoaded", function() {
 	const list = ["glasses1", "glasses2", "hat1", "hat2", "earring"];
 	const visibles = [true, false, false, true, false];
